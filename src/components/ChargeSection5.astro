@@ -1,0 +1,29 @@
+---
+import Footer from "./footer.astro";
+---
+<section
+    class="landing-section bg-black  h-screen w-screen text-center relative overflow-hidden"
+    data-header-color='black'
+    id="panel"
+>
+    <div class="z-30 relative h-full flex flex-col ">
+        <header>
+            <h2 class="text-black pt-40 md:pt-20 text-[40px] font-medium ">Solar Panels</h2>
+            <p class="text-black text-sm underline">Schedule a Virtual Consultation</p>
+        </header>
+
+        <Footer />
+    </div>
+    <div class="absolute top-0 bottom-0 h-full w-full z-10">
+        <img
+        src="/SolarPanels_D.avif"
+        alt="Model S"
+        class="h-full min-[900px]:block max-[440px]:hidden w-full object-cover object-center"
+    />
+    <img
+        src="/SolarPanels-Mobile.avif"
+        alt="Model S"
+        class="h-full w-full min-[441px]:hidden max-[440px]:block object-cover object-center"
+    />
+    </div>
+</section>

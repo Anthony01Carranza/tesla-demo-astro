@@ -5,12 +5,16 @@ import HeroSection from "../components/HeroSection.astro";
 import ChargeSection from "../components/ChargeSection.astro";
 import ChargeSection2 from "../components/ChargeSection2.astro";
 import ChargeSection3 from "../components/ChargeSection3.astro";
+
+import ChargeSection4 from "../components/ChargeSection4.astro";
+import ChargeSection5 from "../components/ChargeSection5.astro";
+
 ---
 
 <Layout title="Tesla - Electric Cars, Solar & Clean Energy.">
 	<LandingHeader />
 
-	<main class="snap-y snap-mandatory relative w-full h-screen  overflow-auto ">
+	<main class="snap-y snap-mandatory relative w-screen h-screen  overflow-x-hidden overflow-auto ">
 		<div class="snap-center">
 			<HeroSection />
 		</div>
@@ -22,8 +26,13 @@ import ChargeSection3 from "../components/ChargeSection3.astro";
 		</div>
 		<div class="snap-center">
 			<ChargeSection2 />
+		</div> 
+		<div class="snap-center">
+			<ChargeSection4 />
 		</div>
-		
+		<div class="snap-center">
+			<ChargeSection5 />
+		</div> 
 			
 		
 	</main>

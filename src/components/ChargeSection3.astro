@@ -2,9 +2,12 @@
 import Footer from "./footer.astro";
 ---
 <section
+
+    class="landing-section bg-black  h-screen w-screen text-center relative overflow-hidden"
+=======
     class="landing-section bg-black h-screen w-screen text-center relative overflow-hidden"
     data-header-color='white'
-    id="modelS"
+    id="1modelS"
 >
     <div class="z-30 relative h-full flex flex-col ">
         <header>
@@ -16,9 +19,21 @@ import Footer from "./footer.astro";
     </div>
     <div class="absolute top-0 bottom-0 h-full w-full z-10">
         <img
+
+        src="/Model-S-Desktop.avif"
+        alt="Model S"
+        class="h-full min-[900px]:block max-[440px]:hidden w-full object-cover object-center"
+    />
+    <img
+        src="/Model-S-Mobile.avif"
+        alt="Model S"
+        class="h-full w-full min-[441px]:hidden max-[440px]:block object-cover object-center"
+    />
+    <img
             src="/Model-S-Desktop.avif"
             alt="Model S"
             class="h-full w-full object-cover object-center"
         />
+
     </div>
 </section>

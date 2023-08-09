@@ -28,9 +28,14 @@ import Footer from "./footer.astro";
     </div>
     <div class="absolute top-0 bottom-0 h-full w-full z-10">
         <img
-            src="/model-y.avif"
-            alt="Model Y"
-            class="h-full w-full object-cover object-center"
+        src="/model-y.avif"
+        alt="Model Y"
+        class="h-full min-[900px]:block max-[440px]:hidden w-full object-cover object-center"
+        />
+        <img
+        src="/ModelY-Mobile.avif"
+        alt="Model Y"
+        class="h-full w-full min-[441px]:hidden max-[440px]:block object-cover object-center"
         />
     </div>
 </section>

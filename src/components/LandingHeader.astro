@@ -1,5 +1,6 @@
 ---
 import Logo from "./logo.astro";
+
 ---
 
 <header
@@ -9,20 +10,26 @@ import Logo from "./logo.astro";
 			<div class="flex flex-grow basis-0">
 				<Logo />
 			</div>
-			<nav>
+			<nav class=" max-[840px]:hidden min-[900px]:block ">
 				<ul
 					class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 [&>li>a]:text-current"
 				>
 					<li><a href="#modelS">Model S</a></li>
 					<li><a href="#modelY">Model Y</a></li>
 					<li><a href="#model3">Model 3</a></li>
+
+					<li><a href="#roof">Solar Roof</a></li>
+					<li><a href="#panel">Solar Panels</a></li>
+
 				</ul>
 			</nav>
 			<nav class="flex flex-grow justify-end basis-0">
 				<ul
 					class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:inline-block [&>li>a]:font-medium [&>li>a]:px-4 [&>li>a]:py-2"
 				>
-					<li><a href="">Menu</a></li>
+
+					<li class="max-[440px]:font-bold "><a href="">Menu</a></li>
+
 				</ul>
 			</nav>
 

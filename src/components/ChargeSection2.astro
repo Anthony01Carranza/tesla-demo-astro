@@ -12,6 +12,31 @@ import Footer from "./footer.astro";
             <p class="text-black text-sm underline">Schedule a Test drive</p>
         </header>
 
+
+        <footer class="flex flex-col flex-grow justify-end pb-20">
+            <div class=" gap-x-4 flex mx-auto">
+                <a
+                    class="bg-gray-600 text-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-gray-500 hover:text-white transition-colors"
+                    >Explore Inventory</a
+                >
+                <a
+                    class="bg-white text-sm rounded font-medium text-black px-12 py-2  hover:bg-black hover:text-white transition-colors inline-flex justify-center items-center "
+                    >Custom Order</a
+                >
+            </div>
+        </footer>
+    </div>
+    <div class="absolute top-0 bottom-0 h-full w-full z-10">
+        <img
+        src="/Model-3-Desktop.avif"
+        alt="Model 3"
+        class="h-full min-[900px]:block max-[440px]:hidden w-full object-cover object-center"
+        />
+        <img
+        src="/Model-3-Mobile.avif"
+        alt="Model 3"
+        class="h-full w-full min-[441px]:hidden max-[440px]:block object-cover object-center"
+
         <Footer />
     </div>
     <div class="absolute top-0 bottom-0 h-full w-full z-10">
@@ -19,6 +44,7 @@ import Footer from "./footer.astro";
             src="/Model-3-Desktop.avif"
             alt="Model Y"
             class="h-full w-full object-cover object-center"
+
         />
     </div>
 </section>
