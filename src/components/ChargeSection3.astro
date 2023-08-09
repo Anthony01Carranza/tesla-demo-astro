@@ -1,0 +1,24 @@
+---
+import Footer from "./footer.astro";
+---
+<section
+    class="landing-section bg-black h-screen w-screen text-center relative overflow-hidden"
+    data-header-color='white'
+    id="modelS"
+>
+    <div class="z-30 relative h-full flex flex-col ">
+        <header>
+            <h2 class="text-black pt-40 md:pt-20 text-[40px] font-medium ">Model S</h2>
+            <p class="text-black text-sm underline">Schedule a Test drive</p>
+        </header>
+
+        <Footer />
+    </div>
+    <div class="absolute top-0 bottom-0 h-full w-full z-10">
+        <img
+            src="/Model-S-Desktop.avif"
+            alt="Model S"
+            class="h-full w-full object-cover object-center"
+        />
+    </div>
+</section>
